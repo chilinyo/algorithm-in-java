@@ -4,7 +4,7 @@ public class BinarySearch {
 
 
     public static void main(String[] args) {
-        int index = bianrySearch(new int[]{1, 2, 3, 5, 6, 7, 8}, 100);
+        int index = binarySearch(new int[]{1, 2, 3, 5, 6, 7, 8}, 100);
         System.out.println(index);
     }
 
@@ -14,7 +14,7 @@ public class BinarySearch {
      * @param target
      * @return
      */
-    static int bianrySearch(int[] nums, int target) {
+    static int binarySearch(int[] nums, int target) {
         // 设置为闭区间 [left, right]
         int left = 0, right = nums.length - 1;
         // 因为是闭区间，所以跳出条件是 left == right
