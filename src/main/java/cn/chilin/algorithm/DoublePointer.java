@@ -63,9 +63,9 @@ public class DoublePointer {
     /**
      * 左右指针，two sum 问题， 跟二分查找很像
      *
-     * @param nums   一个升序数组, 如: [2, 7, 11, 15]
-     * @param target 两数之和的目标值, 如: 9
-     * @return 返回符合条件的两个数的下标值, 如返回: [1, 2], 否则返回: [-1, -1]
+     * @param   nums   一个升序数组, 如: [2, 7, 11, 15]
+     * @param   target 两数之和的目标值, 如: 9
+     * @return  返回符合条件的两个数的下标值, 如返回: [1, 2], 否则返回: [-1, -1]
      */
     static int[] twoSum(int[] nums, int target) {
         int left = 0, right = nums.length - 1;
@@ -96,7 +96,7 @@ public class DoublePointer {
 //        node4.next = node5;
 //        node5.next = node2;
 //        System.out.println(detectNode(node1).data);
-
+        
         int []res = twoSum(new int[]{2, 7, 11, 15}, 9);
         System.out.println(Arrays.stream(res).boxed().collect(Collectors.toList()));
     }

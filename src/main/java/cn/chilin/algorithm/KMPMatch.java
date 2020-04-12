@@ -1,5 +1,6 @@
 package cn.chilin.algorithm;
 
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,11 +15,13 @@ public class KMPMatch {
     static List<Integer> search(String text, String pattern) {
         // 获得局部匹配表
         int[] pmt = getPMT(pattern);
+
         List<Integer> result = new ArrayList<>();
         // 统计当前的最大匹配个数
         int maxLen = 0;
         for (int i = 0; i < text.length(); i++) {
             if (text.charAt(i) == pattern.charAt(maxLen)) {
+
                 // 如果配对，当前最大匹配长度增加一
                 maxLen ++;
             } else if (maxLen > 0 && text.charAt(i) != pattern.charAt(maxLen)) {
@@ -31,6 +34,7 @@ public class KMPMatch {
                 // 匹配完成，配对个数清零
                 maxLen = 0;
             }
+
         }
 
         return result;
