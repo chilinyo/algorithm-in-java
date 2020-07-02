@@ -1,4 +1,4 @@
-package cn.chilin.algorithm
+package cn.chilin.algorithm;
 
 import java.util.LinkedList;
 
