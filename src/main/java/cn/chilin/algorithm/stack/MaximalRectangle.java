@@ -1,4 +1,4 @@
-package cn.chilin.algorithm;
+package cn.chilin.algorithm.stack;
 import java.util.Stack;
 
 /** 

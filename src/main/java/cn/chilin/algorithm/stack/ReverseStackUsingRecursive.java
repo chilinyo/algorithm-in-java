@@ -1,7 +1,11 @@
-package cn.chilin.algorithm;
+package cn.chilin.algorithm.stack;
 
 import java.util.Stack;
 
+/**
+ * 使用递归反转栈
+ *
+ */
 public class ReverseStackUsingRecursive {
  
 	public static void reverse(Stack<Integer> stack) {

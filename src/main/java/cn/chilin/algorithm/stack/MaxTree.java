@@ -1,4 +1,4 @@
-package cn.chilin.algorithm;
+package cn.chilin.algorithm.stack;
 import java.util.HashMap;
 import java.util.Stack;
 
@@ -36,7 +36,7 @@ public class MaxTree{
 		} 
 		// 全部入栈以后还需一个弹出操作
 		while (!stack.isEmpty()) {
-			parentsMap.put(stack.pop(), stack.isEmpty ? null : stack.peek());
+			parentsMap.put(stack.pop(), stack.isEmpty() ? null : stack.peek());
 		}
 
 		Node head = null;
